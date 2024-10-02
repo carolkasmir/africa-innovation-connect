@@ -32,7 +32,7 @@ a:hover {
 }
 
 header {
-    background-color: rgba(44, 2, 6, 0.95);
+    background-color: rgba(122, 4, 16, 0.95);
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -169,8 +169,8 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color:rgba(44, 2, 6, 0.95) ;
-    box-shadow: 0 -4px 10px rgba(1, 40, 110, 0.1);
+    background-color:rgba(122, 4, 16, 0.95);
+    box-shadow: 0 -4px 10px rgba(2, 16, 43, 0.1);
     position: relative;
     bottom: 0;
     width: 100%;
