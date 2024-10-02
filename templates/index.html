@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Africa Innovation Connect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Africa Innovation Connect</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="active">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('mentorship') }}">Mentorship</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('resources') }}">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="index-intro">
+            <h2>Empowering Africa's Next Generation of Innovators</h2>
+            <p>Africa Innovation Connect is a platform designed to assist Africa's youth entrepreneurs. We facilitate the conversion of ideas into successful enterprises by giving access to finance, resources, and mentors.</p>
+            <a href="{{ url_for('mentorship') }}" class="btn">Get Started with Mentorship</a>
+
+
+        <section class="features-grid">
+            <div class="feature">
+                <h3>Mentorship</h3>
+                <p>We connect you with industry experts who can guide you through the challenges of building a business.</p>
+                <img src="{{ url_for('static', filename='images/mentorship.jpg') }}" alt="Mentorship">
+            </div>
+            <div class="feature">
+                <h3>Resources</h3>
+                <p>Get access to our carefully chosen learning materials, workshops, and guides to improve your entrepreneurial abilities.</p>
+                <img src="{{ url_for('static', filename='images/resources.jpg') }}" alt="Resources">
+            </div>
+            <div class="feature">
+                <h3>Funding Opportunities</h3>
+                <p>Find out how to apply for various funding opportunities that can help fuel your startup's growth.</p>
+                <img src="{{ url_for('static', filename='images/funding.jpg') }}" alt="Funding">
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Entrepreneurs Say</h2>
+            <div class="testimonial">
+                <p>"Africa Innovation Connect helped me find a mentor who guided me through my startup journey. I couldn't have done it without them!"</p>
+                <p>- Entrepreneur in Nairobi</p>
+            </div>
+            <div class="testimonial">
+                <p>"The resources provided by this platform were invaluable. I learned so much about securing funding and growing my business!"</p>
+                <p>- Entrepreneur in Accra</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Africa Innovation Connect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+

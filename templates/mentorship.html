@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mentorship Program - Africa Innovation Connect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Mentorship Program</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('mentorship') }}" class="active">Mentorship</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('resources') }}">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        {% with messages = get_flashed_messages(with_categories=True) %}
+            {% if messages %}
+                <ul class="flashes">
+                    {% for category, message in messages %}
+                        <li class="{{ category }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <section class="mentorship-info">
+            <h2>How We Support Your Journey</h2>
+            <p>Our mentorship program pairs you with seasoned entrepreneurs and industry experts who will guide you through various stages of building your business. Whether you're starting out or scaling, we have mentors to support you.</p>
+            <p>Ready to take the next step? Fill out the form below to request a mentor!</p>
+        </section>
+
+        <section class="mentorship-form">
+            <h3>Request Mentorship</h3>
+            <form action="{{ url_for('mentorship') }}" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Why Do You Need Mentorship?</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Africa Innovation Connect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+

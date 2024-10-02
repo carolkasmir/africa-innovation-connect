@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us - Africa Innovation Connect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}" class="active">About</a></li>
+                <li><a href="{{ url_for('mentorship') }}">Mentorship</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('resources') }}">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>Who We Are</h2>
+            <p>Africa Innovation Connect is a platform designed to empower young African entrepreneurs. Our mission is to foster innovation, collaboration, and support for emerging leaders in the entrepreneurial space. We believe that every young person has the potential to change the world with their ideas.</p>
+            <p>We provide a vibrant ecosystem that connects entrepreneurs with experienced mentors, resources, and funding opportunities. By facilitating networking and knowledge sharing, we help aspiring business leaders bring their innovative ideas to life, ultimately contributing to Africa's economic growth and development.</p>
+            <p>At Africa Innovation Connect, we are passionate about nurturing the next generation of entrepreneurs who will drive sustainable change across the continent.</p>
+        </section>
+
+        <section class="about-vision">
+            <h3>Our Vision</h3>
+            <p>Our vision is to build a connected ecosystem of entrepreneurs across Africa who drive socio-economic change through innovation. We envision a future where young innovators are equipped with the tools and resources necessary to succeed, regardless of their background or location.</p>
+            <p>We strive to create an environment where collaboration and knowledge sharing are paramount, allowing innovative solutions to flourish. By uniting entrepreneurial minds across the continent, we aim to inspire a movement that transforms Africa into a global hub for innovation and creativity.</p>
+        </section>
+
+        <section class="about-mission">
+            <h3>Our Mission</h3>
+            <p>Our mission is to equip young African entrepreneurs with the skills, resources, and support needed to transform their innovative ideas into successful businesses. We aim to provide comprehensive mentorship programs, educational workshops, and access to funding that empower entrepreneurs at all stages of their journey.</p>
+            <p>Through strategic partnerships with businesses, educational institutions, and governments, we are dedicated to creating opportunities for young entrepreneurs to learn, grow, and thrive. We believe that by investing in the potential of young minds, we can create a ripple effect that benefits communities, economies, and societies as a whole.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Africa Innovation Connect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
